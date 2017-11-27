@@ -1,0 +1,1 @@
+start "run server" call node yourServer.js

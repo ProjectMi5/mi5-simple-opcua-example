@@ -1,0 +1,26 @@
+{
+  "name": "mi5-simple-opcua-example",
+  "version": "1.0.0",
+  "description": "Example for the mi5-simple-opcua module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProjectMi5/mi5-simple-opcua-example.git"
+  },
+  "keywords": [
+    "opcua",
+    "simple"
+  ],
+  "author": "Dominik Serve",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProjectMi5/mi5-simple-opcua-example/issues"
+  },
+  "homepage": "https://github.com/ProjectMi5/mi5-simple-opcua-example#readme",
+  "dependencies": {
+    "mi5-simple-opcua": "git+https://github.com/ProjectMi5/mi5-simple-opcua.git"
+  }
+}
