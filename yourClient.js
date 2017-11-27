@@ -29,4 +29,19 @@ async function asyncOperation(){
   // read variable again
   result = await yourVariable.read();
   console.log('Read variable: '+result);
+
+  // browse Server
+  await client.browseServer();
+
+  //filter
+  console.log("Find nodes for path: ['Objects', 'Server', 'Server']");
+  let nodeArray = client.findPattern(['Objects', 'Server', 'Server']); /* this finds multiple nodes because there is
+  ServerArray, ServerCapabilities, ServerConfiguration, ... */
+  console.log(nodeArray);
+
+  //another filter
+  console.log("Find nodes for path: ['Objects', 'Server', 'Capabilities$']");
+  nodeArray = client.findPattern(['Objects', 'Server', 'Capabilities$']); // only finds one node: ServerCapabilities
+  console.log(nodeArray);
+
 }
